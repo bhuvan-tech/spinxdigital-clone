@@ -142,18 +142,23 @@ section.three div img#exp{
 section.three div.imgs img:hover{
     border: #ffffff 5px solid;
 }
-section.three div.forgreen{
+section.three div.forgreen,
+section.four div.forgreen,
+section.five div.forgreen{
     position:relative;
 }
-section.three div h1{
+section.three div h1,
+section.four div h2,
+section.five div.forgreen h1{
     text-align: center;
     font-style: bold;
     font-size: 2 rem;
     padding: 40px 0px;
-    
 }
 
-section.three div h1::after{
+section.three div h1::after,
+section.four div h2::after,
+section.five div h1::after{
     content:'';
     position:absolute;
     width:12%;
@@ -167,46 +172,53 @@ section.three div h1::after{
     padding:0;
 }
 
+section.four div h2::after{
+    background: rgb(144, 144, 144);
+}
+
 section.three div p{
     width:100%;
     padding:0px 500px 40px;
 
 }
-section.four{
+section.last{
     display: flex;
     width:100%;
     background: url("images/contact-back-bg@2x.jpg") no-repeat;
     height: auto;
     color:#fff;
 }
-section.four .foot1,
-section.four .foot2{
+section.last .foot1,
+section.last .foot2{
     width:50%;
     padding:50px;
 }
 
-section.four form{
+section.last form{
     display: flex;
     flex-direction: column;
 }
 
-section.four .foot1 form ul li,
-section.four .foot2 ul li{
+section.last .foot1 form ul li,
+section.last .foot2 ul li{
     padding-top: 25px;
     list-style: none;
 }
-section.four .foot1 form ul li input{
+section.last .foot1 form ul li input{
     width:100%;
     height: 30px;
     background-color:rgba(170, 187, 171, 0.349);
     border: none;
 }
 #head2{
-    font-size: 3rem;
+    font-size: 4rem;
+    font-weight: 900;
+    padding-bottom: 50px;
 }
 
 #head3{
     font-size: 2rem;
+    padding-bottom: 50px;
 }
 
 #head4:hover,
@@ -214,13 +226,147 @@ section.four .foot1 form ul li input{
     color:rgb(122, 158, 50);
 }
 
-#btn{
+#btn,#btn1{
     margin-top: 20px;
     border: 3px solid rgb(122, 158, 50);
     height: 40px;
     width:30%;
-    color:rgb(44, 44, 44);
-    /* background-color:rgba(170, 187, 171, 0); */
+    background-color:rgb(122, 158, 50);
+    color:#000;
     text-transform: uppercase;
 }
 
+#btn{
+    margin:20px 850px;
+    width:15%;
+    z-index: 2;
+}
+
+#btn:hover,
+#btn1:hover{
+    color:#fff;
+    background-color: #000;
+    border: none;
+}
+
+section.four{
+    background-color: #1b1b1b;
+    color:#fff;
+    height:auto;
+}
+
+section.four h2,
+section.five div h1{
+    text-align:center;
+    padding:50px 0px 30px;
+}
+
+section.four p,
+section.five p#para{
+    text-align: center;
+    width: 100%;
+    padding:30px 30%;
+}
+
+
+
+section.four div.row1,
+section.four div.row2{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50px;
+}
+
+section.four div.row1 img,
+section.four div.row2 img{
+    width: 170px;
+    height: 80px;
+    padding: 3px;
+}
+
+section.five{
+    background-color: #ececec;
+    height:auto;
+}
+section.five div.flex6e{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 20%;
+    /* flex-grow: 3; */
+}
+
+section.five div.flex6e .ele{
+    width: 350px;
+    height:500px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background: #fff;
+    padding:20px;
+    margin:10px;
+}
+
+#emg{
+    width: 20px;
+    height: 20px;
+}
+
+section.five div.flex6e .ele p{
+    width:70%;
+}
+
+section.five div.flex6e .ele a{
+    text-decoration: none;
+    font-size: 1.05em;
+    font-weight: 700;
+}
+
+
+/* 
+.carousel-inner{
+    position: relative;
+    height: 150px;
+}
+
+.carousel-item{
+    width:95px;
+    height:95px;
+}
+
+/* .d-block .w-100{
+    position: absolute;
+    width:95px;
+    height:95px;
+} */
+
+
+
+
+.carousel {
+    background: #FAFAFA;
+  }
+  
+  .carousel-cell {
+    width: 95px;
+    height: 100px;
+    margin-right: 10px;
+  }
+  
+  .carousel-cell-image {
+    display: block;
+    max-height: 100%;
+    margin: 0 auto;
+    max-width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity 0.4s;
+            transition: opacity 0.4s;
+  }
+  
+  /* fade in lazy loaded image */
+  .carousel-cell-image.flickity-lazyloaded,
+  .carousel-cell-image.flickity-lazyerror {
+    opacity: 1;
+  } */
