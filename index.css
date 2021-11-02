@@ -249,20 +249,23 @@ section.last .foot1 form ul li input{
     border: none;
 }
 
-section.four{
+section.four,
+section.seven{
     background-color: #1b1b1b;
     color:#fff;
     height:auto;
 }
 
 section.four h2,
-section.five div h1{
+section.five div h1,
+section.seven div h1.mainsix{
     text-align:center;
     padding:50px 0px 30px;
 }
 
 section.four p,
-section.five p#para{
+section.five p#para,
+section.seven p.mainsixp{
     text-align: center;
     width: 100%;
     padding:30px 30%;
@@ -343,30 +346,236 @@ section.five div.flex6e .ele a{
 } */
 
 
+section.six{
+    background: #fff;
+    display: flex;
+    justify-content: flex-start;
+    height:70vh;
+    width:100%;
+}
 
+.list{
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+}
+.title span#gre{
+    font-weight: 800;
+}
+.list h3{
+    color:#000;
+    font-size: 1rem;
+    padding:10px 2rem;
+}
+.title{
+    background: #fff;
+    padding:20px 30px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-decoration: none;
 
-.carousel {
-    background: #FAFAFA;
-  }
-  
-  .carousel-cell {
-    width: 95px;
-    height: 100px;
-    margin-right: 10px;
-  }
-  
-  .carousel-cell-image {
-    display: block;
-    max-height: 100%;
-    margin: 0 auto;
-    max-width: 100%;
+}
+
+.icon{
+    width:20px;
+    position: relative;
+
+}
+.icon::before, .icon::after{
+    content:"";
+    position: absolute;
+    width:20px;
+    height:3px;
+    background: rgb(122, 158, 50);
+    top:-1.5px;
+}
+.icon::after{
+    transform: rotate(90deg);
+    transition:0.5% linear;
+}
+.text{
+    background: #fff;
+    margin: 3px 0;
     opacity: 0;
-    -webkit-transition: opacity 0.4s;
-            transition: opacity 0.4s;
-  }
-  
-  /* fade in lazy loaded image */
-  .carousel-cell-image.flickity-lazyloaded,
-  .carousel-cell-image.flickity-lazyerror {
+    color: #000;
+    height:0 ;
+    font-size: 1rem;
+    font-weight: 400;
+    
+}
+.item:target .text{
     opacity: 1;
-  } */
+    height: auto;
+    padding: 20px 30px;
+    margin: 0;
+    border-top:2px solid ;
+    margin-bottom: 6px;
+
+}
+
+.item:target .icon::after{
+    transform: rotateY(90deg);
+    
+}
+
+section.seven {
+    background:#181818;
+}
+section.seven nav.second{
+    display:flex;
+    justify-content: center;
+    background:#181818;
+}
+
+
+nav ul{
+    float: right;
+    margin-left:250px;
+    position: relative;
+}
+nav ul li{
+    list-style: none;
+    display:inline-block;
+    /* padding:20px; */
+    font-size: 1em;
+    line-height: 80px;
+    text-align: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    flex-direction: row;
+}
+
+.twoparts{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.twoparts #discovery{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 50px 50px 50px 180px ;
+
+}
+
+.twoparts div h1{
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+.twoparts p{
+    width:70%;
+    font-size: 1rem;
+    line-height: 20px;
+    line-break: 10px;
+    padding-bottom: 30px;
+}
+
+.twoparts a{
+    text-decoration: none;
+    width: 70%;
+}
+
+.twoparts #astronot{
+    margin:40px 0px;
+    width:30%;
+}
+
+section.eight{
+    background: rgb(255, 255, 255);
+    width:100%;
+    position: relative;
+    height:auto;
+
+}
+
+section.eight h1{
+    text-align: center;
+    padding:80px 0 0 0;
+}
+
+section.eight p{
+    text-align: center;
+    width:100%;
+    padding:20px 20%
+}
+section.eight div.hero{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom:150px;
+}
+section.eight div div.one,
+section.eight div div.two,
+section.eight div div.three{
+    display: flex;
+    justify-content: center;
+}
+
+section.eight div div.one img,
+section.eight div div.two img,
+section.eight div div.three img{
+    padding:10px;
+}
+
+section.nine{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+section.nine div.floatimg{
+    position: relative;
+    width:100%;
+    height:1000px;
+    background: rgb(122, 158, 50);
+}
+
+section.nine div.floatimg h1{
+    color: #fff;
+    font-size: 4.5rem;
+    position: absolute;
+    right:5%;
+    top:0;
+    z-index: 2;
+}
+
+section.nine div img{
+    position: absolute;
+    width: 550px;
+    top:-60px;
+    right: -60px;
+    z-index: 1;
+}
+
+section.nine div.right-content{
+    z-index: 1;
+    background: rgb(255, 255, 255);
+    padding: 100px;
+    width: 100%;
+}
+
+section.nine div.right-content h2{
+    padding:30px 0;
+    width:60%;
+}
+
+section.nine div.right-content p{
+    width:60%;
+    color: #1b1b1b;
+    line-height:26px;
+    font-size: 90%;
+}
