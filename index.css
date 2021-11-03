@@ -1,7 +1,6 @@
 *{
     margin: 0;padding: 0;
     box-sizing: border-box;
-    /* background: yellowgreen; */
 }
 
 section.one{
@@ -353,6 +352,23 @@ section.six{
     height:70vh;
     width:100%;
 }
+#bad-img{
+    width:50%;
+    height:auto;
+}
+@media screen and (max-width: 600px) {
+    #bad-img{
+        display: none;
+    }
+
+    .image-pack .hero .two,
+    .image-pack .hero .three{
+        display: none;
+    }
+    section.one nav ul{
+        display: none;
+    }
+}
 
 .list{
     width:60%;
@@ -524,6 +540,7 @@ section.eight div div.two,
 section.eight div div.three{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 section.eight div div.one img,
