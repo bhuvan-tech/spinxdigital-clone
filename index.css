@@ -1,6 +1,7 @@
 *{
     margin: 0;padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 section.one{
@@ -449,8 +450,9 @@ section.six{
     section.four .row2{
         display: flex;
         flex-wrap: wrap;
-        padding:20px;
+        padding:10px;
     }
+
     section.four .row2{
         padding-top:0px !important;
     }
@@ -755,6 +757,7 @@ section.nine div.right-content p{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row-reverse;
+        overflow: hidden;
     }
 
     /* section.nine  */
