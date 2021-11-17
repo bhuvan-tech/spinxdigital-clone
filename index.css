@@ -798,20 +798,18 @@ section.nine div.right-content p{
         flex-wrap: wrap;
     }
     
-    section.nine div img{
-        position:relative;
+    section.nine #aunty{
+        display: none;
+        /* position:relative;
         top:0;
         left:0;
-        right:0;   
+        right:0;    */
     }
 
     section.nine h1{
         padding:30px;
     }
 
-    section.last h1{
-
-    }
 
     section.last .foot1 form ul li input{
         width:300px;
